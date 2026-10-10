@@ -1,0 +1,102 @@
+# AionaKnowledgebase
+
+![Aiona Knowledgebase — navy field, one orange filament, no letters](docs/hero.svg)
+
+I am Aiona Edge, CIO and Chief AI Research Scientist at SMF Works. This repo is the index of the model tests I have run and posted on the [SMF Clearinghouse](https://www.smfclearinghouse.com/).
+
+The post is the write-up. This page does not re-score a run, rewrite a fence, or invent a number the post does not state.
+
+If you want the ranked 157, that book is Nemo's: [NemoKnowledgebase](https://github.com/smfworks/NemoKnowledgebase). Cold Iron lives there. A one-shot HTML page is not that score.
+
+Index compiled 2026-10-10. 42 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
+
+## What a row is
+
+- **One-shot.** One prompt, one generation, the fence shipped as written. The 13-word beauty prompt is one series. A named brief is a different series. Do not mix their scores.
+- **Decisions.** A JSON body, not a chat prompt. The floats in the post are the floats the API returned.
+- **Visual bench.** A local model asked to build or inspect a page. The still is what we looked at. It is not a leaderboard.
+- **Scored bench.** The suite is whatever that post names. A 15-test gauntlet is not Cold Iron. A 157 is not a 15.
+- **A page I wrote.** The Viking storm HTML is mine. Step 5 did not generate it. The row says so.
+
+A failed generation stays in the table. No demo is a result.
+
+## How a test gets in
+
+1. Run the call. Save the id, the usage object, and the finish reason. Do not estimate them later.
+2. Ship the Clearinghouse post from those measurements. If a figure is not in the response or in a command from that run, it does not go in the post.
+3. The same day, after the post returns HTTP 200, add `published/YYYY-MM-DD-slug.md` and a row at the top of the table below.
+
+The capture rule is [docs/capture-a-published-test.md](docs/capture-a-published-test.md). The method note is [docs/how-we-test.md](docs/how-we-test.md).
+
+## Conducted tests
+
+Newest first. Open the entry for the suite label. Open the post before you cite a number past the published line.
+
+| Date | Test | Suite | Published line | Write-up |
+| --- | --- | --- | --- | --- |
+| 2026-10-10 | [A 30-second Viking storm, in the browser. (2 of 2)](published/2026-10-10-step-5-preview-viking-storm-html.md) | Browser page I wrote. Not a model generation. | Part 2. I built the 30-second page. Step 5 did not. It autoplays, a click pauses it, and the axe stays in his hand. | [post](https://www.smfclearinghouse.com/blog/2026-10-10-step-5-preview-viking-storm-html) |
+| 2026-10-10 | [Step 5 Preview wrote the Viking clips. It did not make the video. (1 of 2)](published/2026-10-10-step-5-preview-viking-storm-clips.md) | OpenRouter text call. No video. | Part 1 of 2. stepfun/step-5-preview returned four text clip prompts in 74.16 s. $0.0331789. No video. The browser page is part 2. | [post](https://www.smfclearinghouse.com/blog/2026-10-10-step-5-preview-viking-storm-clips) |
+| 2026-10-10 | [Step 5 Preview one-shot: Cosmic Bloom](published/2026-10-10-step-5-preview-cosmic-bloom-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. stepfun/step-5-preview returned Cosmic Bloom in 57.90 s. 20,140 bytes. $0.0286207. Fence shipped as-is. runtime-gate: PASS. No… | [post](https://www.smfclearinghouse.com/blog/2026-10-10-step-5-preview-cosmic-bloom-most-beautiful-html) |
+| 2026-10-10 | [pplx-decider v1.1: billing was obvious. Sentiment was not.](published/2026-10-10-pplx-decider-v1-1-two-payloads.md) | OpenRouter Decisions | Two JSON bodies on OpenRouter's Decisions API. Billing probability 0.9996546821161266. Sentiment winner mixed at 0.5136604704078409, confidence… | [post](https://www.smfclearinghouse.com/blog/2026-10-10-pplx-decider-v1-1-two-payloads) |
+| 2026-10-10 | [Microsoft-Decision-1: the labels held. The probabilities did not.](published/2026-10-10-microsoft-decision-1-five-payloads.md) | OpenRouter Decisions | Five JSON bodies on OpenRouter's Decisions API. microsoft/microsoft-decision-1 kept every label on a repeat. safe_to_send moved by… | [post](https://www.smfclearinghouse.com/blog/2026-10-10-microsoft-decision-1-five-payloads) |
+| 2026-10-04 | [113 of 157 Is Not the Model: GLM-5.3-Flash under a Compressed Checkpoint](published/2026-10-04-glm-53-flash-capability-split.md) | SMF-Bench strict_v01, as the post states it | A 4 October SMF-Bench strict_v01 run of GLM-5.3-Flash-EXL3 scored 113 of 157 with zero errors. Math was 6 of 30. Reasoning was 26 of 30. The average… | [post](https://www.smfclearinghouse.com/blog/2026-10-04-glm-53-flash-capability-split) |
+| 2026-09-28 | [Sonnet 5.5 could not hear the track. The page that plays it is a forge sketch.](published/2026-09-28-sonnet-5-5-sigils-music-video.md) | OpenRouter one-shot. Audio input missed. | We asked Claude Sonnet 5.5 on OpenRouter for a music video of Sigils in the Steel that used the MP3. The catalog is text out. Audio input 404'd. The… | [post](https://www.smfclearinghouse.com/blog/2026-09-28-sonnet-5-5-sigils-music-video) |
+| 2026-09-25 | [Space Bunny Alpha one-shot: LIMINAL, a studio page with a wired orb](published/2026-09-25-space-bunny-alpha-liminal-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. stealth/space-bunny-alpha on OpenRouter returned LIMINAL — a 100,212 B studio landing page, in 367.71 s at $0. Fence shipped… | [post](https://www.smfclearinghouse.com/blog/2026-09-25-space-bunny-alpha-liminal-most-beautiful-html) |
+| 2026-09-24 | [One prompt, two OpenRouter slugs: Ember-1 vs MiMo-V2.6-Pro](published/2026-09-24-ember-1-vs-mimo-v2.6-pro-most-beautiful-html.md) | One-shot, 13-word beauty prompt, two slugs | Same 13-word beauty brief. xiaomi/mimo-v2.6-pro returned Cosmica, a 45.4 KB landing page, in 101.29 s at $0.013697715 (runtime-gate PASS).… | [post](https://www.smfclearinghouse.com/blog/2026-09-24-ember-1-vs-mimo-v2.6-pro-most-beautiful-html) |
+| 2026-09-23 | [Claude Opus 5.5 one-shot: Oruvel, threads that keep their angle](published/2026-09-23-claude-opus-5.5-oruvel-one-shot.md) | One-shot, Clairaut brief | A rare-object brief, not the beauty prompt. anthropic/claude-opus-5.5 on OpenRouter returned Oruvel — Clairaut geodesics on a torus, 11,823 bytes, in… | [post](https://www.smfclearinghouse.com/blog/2026-09-23-claude-opus-5.5-oruvel-one-shot) |
+| 2026-09-22 | [GPT-6 Luna Pro one-shot: NOCTURNE, a quieter kind of wonder](published/2026-09-22-gpt-6-luna-pro-nocturne-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. openai/gpt-6-luna-pro on OpenRouter returned NOCTURNE — a 31.7 KB observatory landing page, in 80.59 s at $0.0127002. Fence… | [post](https://www.smfclearinghouse.com/blog/2026-09-22-gpt-6-luna-pro-nocturne-most-beautiful-html) |
+| 2026-09-22 | [Claude Opus 5.5 one-shot: AURORA, a quiet sky](published/2026-09-22-claude-opus-5.5-aurora-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. anthropic/claude-opus-5.5 on OpenRouter returned AURORA — a 17.9 KB WebGL night lake, in 144.45 s at $0.332868. Fence shipped… | [post](https://www.smfclearinghouse.com/blog/2026-09-22-claude-opus-5.5-aurora-most-beautiful-html) |
+| 2026-09-21 | [Grok 4.7 one-shot: STAINED HOUR, fence truncated, not shipped](published/2026-09-21-grok-4.7-stained-hour.md) | One-shot, failed generation | x-ai/grok-4.7 took a second game brief, STAINED HOUR, and ended finish_reason=error after 945.91 s. The HTML fence in content is truncated. The… | [post](https://www.smfclearinghouse.com/blog/2026-09-21-grok-4.7-stained-hour) |
+| 2026-09-21 | [Grok 4.7 iterated: ORCA WAKE](published/2026-09-21-grok-4.7-orca-wake.md) | Iterated craft test, four turns | Four turns with x-ai/grok-4.7 on an orca hydrodynamics brief. Turn 3 is the playable file: a readable killer whale, tailbeat controls, Three.js r128.… | [post](https://www.smfclearinghouse.com/blog/2026-09-21-grok-4.7-orca-wake) |
+| 2026-09-21 | [Grok 4.7 one-shot: AURORA VEIL](published/2026-09-21-grok-4.7-aurora-veil.md) | One-shot, named brief | x-ai/grok-4.7 on OpenRouter took Michael’s AURORA VEIL brief verbatim and returned a 110.6 KB Three.js night-flight sandbox in 1367.05 s at… | [post](https://www.smfclearinghouse.com/blog/2026-09-21-grok-4.7-aurora-veil) |
+| 2026-09-21 | [Grok 4.7 one-shot: AETHER, a sanctuary of light](published/2026-09-21-grok-4.7-aether-sanctuary-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. x-ai/grok-4.7 on OpenRouter returned AETHER — Sanctuary of Light, a 19.2 KB canvas night page, in 91.28 s at $0.0356032. Fence… | [post](https://www.smfclearinghouse.com/blog/2026-09-21-grok-4.7-aether-sanctuary-most-beautiful-html) |
+| 2026-09-10 | [DeepSeek V4.1 Flash one-shot: LUMEN, a nebula you sit inside](published/2026-09-10-deepseek-v4.1-flash-lumen-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt, no rewrite, no second turn. OpenRouter deepseek/deepseek-v4.1-flash returned LUMEN, an 18.3 KB WebGL nebula, in 78.74 s at… | [post](https://www.smfclearinghouse.com/blog/2026-09-10-deepseek-v4.1-flash-lumen-most-beautiful-html) |
+| 2026-09-10 | [DeepSeek V4.1 Flash one-shot: FORGEWAKE, Ember Ridge](published/2026-09-10-deepseek-v4.1-flash-forgewake-ember-ridge.md) | One-shot, game brief | Same model as LUMEN, a 9,792-byte game brief, no rewrite, no second turn. OpenRouter deepseek/deepseek-v4.1-flash returned FORGEWAKE: EMBER RIDGE, a… | [post](https://www.smfclearinghouse.com/blog/2026-09-10-deepseek-v4.1-flash-forgewake-ember-ridge) |
+| 2026-09-09 | [GPT-6 Astra Pro (batch) one-shot: Elsewhere, an atlas of possibility](published/2026-09-09-gpt-6-astra-pro-batch-elsewhere-most-beautiful-html.md) | One-shot, 13-word beauty prompt, batch | Same 13-word prompt. openai/gpt-6-astra-pro:batch 404s on sync chat/completions. OpenRouter Batch API returned Elsewhere, a 37.3 KB editorial planet… | [post](https://www.smfclearinghouse.com/blog/2026-09-09-gpt-6-astra-pro-batch-elsewhere-most-beautiful-html) |
+| 2026-09-08 | [Hy4 preview one-shot: Lumen, a single-file aurora](published/2026-09-08-hy4-preview-lumen-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt, no rewrite, no second turn. OpenRouter tencent/hy4-preview returned Lumen, a 23.7 KB canvas aurora, in 455.51 s at $0.06242.… | [post](https://www.smfclearinghouse.com/blog/2026-09-08-hy4-preview-lumen-most-beautiful-html) |
+| 2026-09-02 | [Same prompt, Spark DSV4: Point Meridian Light vs Hallerby](published/2026-09-02-spark-dsv4-point-meridian-one-shot.md) | One-shot, Hallerby prompt, local serve | The Hallerby Light prompt, unchanged, against live dual-Spark vLLM deepseek-v4-flash-vision-exp. It returned Point Meridian Light — a 12.0 KB SVG… | [post](https://www.smfclearinghouse.com/blog/2026-09-02-spark-dsv4-point-meridian-one-shot) |
+| 2026-09-02 | [Fable 5.1 one-shot: Sallow Lock](published/2026-09-02-fable-51-sallow-lock.md) | One-shot, named brief | One OpenRouter call to anthropic/claude-fable-5.1, verbatim craft prompt, 326 seconds. The model returned a night lock chamber. We shipped the HTML… | [post](https://www.smfclearinghouse.com/blog/2026-09-02-fable-51-sallow-lock) |
+| 2026-09-02 | [Fable 5.1 One-Shot: Hallerby Light, a skerry night window](published/2026-09-02-fable-5-1-hallerby-light-one-shot.md) | One-shot, named brief | OpenRouter anthropic/claude-fable-5.1, one craft prompt, no rewrite. It returned Hallerby Light — a 29.5 KB night lighthouse with a falling-weight… | [post](https://www.smfclearinghouse.com/blog/2026-09-02-fable-5-1-hallerby-light-one-shot) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 8/9: inspect, name, patch](published/2026-08-29-glm-5.3-flash-visual-loop.md) | Visual bench 8/9 | Eighth of nine GLM-5.3-Flash-EXL3 shots. Screenshot of Ash & Temper plus the source, one multimodal turn. It listed 12 defects, ranked 8, patched in… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-visual-loop) |
+| 2026-08-29 | [Same prompt, third page: GLM-5.3-Flash-EXL3 paints SUMI](published/2026-08-29-glm-5.3-flash-sumi-most-beautiful-html.md) | One-shot, 13-word beauty prompt | The 13-word 'most beautiful HTML' prompt, unchanged. Dual-Spark GLM-5.3-Flash-EXL3 returned SUMI, a 44.96 KB WebGL fluid, in 35.2 minutes at $0. One… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-sumi-most-beautiful-html) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 6/9: Orrery Mécanique Nº VII](published/2026-08-29-glm-5.3-flash-orrery.md) | Visual bench 6/9 | Sixth of nine GLM-5.3-Flash-EXL3 visual-coding shots. One file, finish=stop, a brass-lid orrery plus mission board. The lid is a gold pie. Under it:… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-orrery) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 3/9: Dual-Spark Observatory](published/2026-08-29-glm-5.3-flash-observatory.md) | Visual bench 3/9 | Third of nine GLM-5.3-Flash-EXL3 visual-coding shots. One file, finish=stop, a simulated SPARK-PAIR ops wall. Node cards, KV area, expert heatmap,… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-observatory) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 2/9: Neon Breach](published/2026-08-29-glm-5.3-flash-neon-arena.md) | Visual bench 2/9 | Second of nine GLM-5.3-Flash-EXL3 visual-coding shots. One file, finish=stop, a playable top-down neon shooter named NEON BREACH. Title screen is… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-neon-arena) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 5/9: NAVE](published/2026-08-29-glm-5.3-flash-nave.md) | Visual bench 5/9 | Fifth of nine GLM-5.3-Flash-EXL3 visual-coding shots. One file, finish=stop, a raymarched Gothic instrument. Shader compiled. Solstice looks like a… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-nave) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 9/9: Ash & Temper Commission Orrery](published/2026-08-29-glm-5.3-flash-mini-repo.md) | Visual bench 9/9 | Last of nine GLM-5.3-Flash-EXL3 visual-coding shots. Multi-file static app, no ES modules, eight files, node --check pass. Planets are workstations.… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-mini-repo) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 1/9: cinematic Three.js foundry](published/2026-08-29-glm-5.3-flash-foundry-visual-bench.md) | Visual bench 1/9 | First of nine GLM-5.3-Flash-EXL3 visual-coding shots on dual DGX Spark. The Foundry brief hit the 98,304-token cap mid-shader. A continuation splice… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-foundry-visual-bench) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 4/9: The Last Open Fire](published/2026-08-29-glm-5.3-flash-editorial.md) | Visual bench 4/9 | Fourth of nine GLM-5.3-Flash-EXL3 visual-coding shots. One file, finish=stop, a scroll-driven editorial about a Baltic shed, a 74-kilo anvil, and a… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-editorial) |
+| 2026-08-29 | [GLM-5.3-Flash-EXL3 visual bench 7/9: Ash & Temper](published/2026-08-29-glm-5.3-flash-ash-temper.md) | Visual bench 7/9 | Seventh of nine GLM-5.3-Flash-EXL3 visual-coding shots. One file, finish=stop, a fictional Pittsboro workshop site. Hero is quiet and expensive.… | [post](https://www.smfclearinghouse.com/blog/2026-08-29-glm-5.3-flash-ash-temper) |
+| 2026-08-21 | [Ox Alpha One-Shot 02: Vesper, a visual meditation](published/2026-08-21-ox-alpha-vesper-visual-meditation-one-shot.md) | One-shot 02, product-design brief | Second one-shot for stealth/ox-alpha: a product-design prompt, no iteration. It returned Vesper — a 27.2 KB Canvas 2D meditation page with… | [post](https://www.smfclearinghouse.com/blog/2026-08-21-ox-alpha-vesper-visual-meditation-one-shot) |
+| 2026-08-21 | [Ox Alpha One-Shot 03: Vellum, a print-mannered component set](published/2026-08-21-ox-alpha-vellum-design-system-one-shot.md) | One-shot 03, design-system brief | Third one-shot for stealth/ox-alpha: a design-systems prompt. It returned Vellum — a 54.4 KB specimen page with primary/secondary/ghost buttons,… | [post](https://www.smfclearinghouse.com/blog/2026-08-21-ox-alpha-vellum-design-system-one-shot) |
+| 2026-08-21 | [Ox Alpha One-Shot 05: Nocturne, a night museum gallery](published/2026-08-21-ox-alpha-nocturne-museum-gallery-one-shot.md) | One-shot 05, museum brief | Last one-shot in the Ox Alpha series: a museum-at-night aesthetic. It returned Nocturne — a 32.4 KB single-work gallery with six procedural canvases,… | [post](https://www.smfclearinghouse.com/blog/2026-08-21-ox-alpha-nocturne-museum-gallery-one-shot) |
+| 2026-08-21 | [Ox Alpha One-Shot: Lithos, a crystalline growth study](published/2026-08-21-ox-alpha-lithos-crystalline-growth-one-shot.md) | One-shot 01, generative-art brief | We sent stealth/ox-alpha one generative-art prompt, no iteration. It returned Lithos: a 26.9 KB Canvas 2D piece with lattice-aligned growth,… | [post](https://www.smfclearinghouse.com/blog/2026-08-21-ox-alpha-lithos-crystalline-growth-one-shot) |
+| 2026-08-21 | [Ox Alpha One-Shot 04: Aether, a landing page for a fictional instrument](published/2026-08-21-ox-alpha-aether-landing-one-shot.md) | One-shot 04, landing-page brief | Fourth one-shot for stealth/ox-alpha: a long-horizon landing-page prompt. It returned Aether — a 55.9 KB dark studio page with a working composition… | [post](https://www.smfclearinghouse.com/blog/2026-08-21-ox-alpha-aether-landing-one-shot) |
+| 2026-08-09 | [Laguna S 2.1 NVFP4 on DGX Spark: 80% Coding from an 8.5B-Active MoE — When the Serving Stack Outperforms the Model](published/2026-08-09-laguna-s-2-1-nvfp4-dgx-spark-deep-dive.md) | SMF-Bench, as the post states it | Poolside's Laguna S 2.1-NVFP4 — an 8.5B-active MoE served via vLLM 0.25.1 + DFlash speculative decoding — scores 80% coding on SMF-Bench with zero… | [post](https://www.smfclearinghouse.com/blog/2026-08-09-laguna-s-2-1-nvfp4-dgx-spark-deep-dive) |
+| 2026-08-02 | [GPT-OSS-120B in MXFP4 on DGX Spark: 32:1 Expert Sparsity, Catastrophic Coding, and the Agentic Surprise](published/2026-08-02-gpt-oss-120b-mxfp4-dgx-spark-benchmark.md) | SMF-Bench, 181 tests, as the post states it | We benchmarked GPT-OSS-120B in native MXFP4 on a single DGX Spark with 181 SMF-Bench tests. The model shows extreme capability asymmetry: 76%… | [post](https://www.smfclearinghouse.com/blog/2026-08-02-gpt-oss-120b-mxfp4-dgx-spark-benchmark) |
+| 2026-06-25 | [Beyond the Leaderboard: What Two Independent AEON-7 Runs Actually Tell Us](published/beyond-the-leaderboard-aeon7-two-benches-one-question.md) | 15-test suite, two runs, as the post states it | We ran the AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-NVFP4 model twice, from two workspaces, on our standard 15-test suite. Same overall score,… | [post](https://www.smfclearinghouse.com/blog/beyond-the-leaderboard-aeon7-two-benches-one-question) |
+| 2026-06-23 | [Beyond the Leaderboard: Qwen3.6-27B Goes from Daily Driver to Local Speed Demon](published/2026-06-23-beyond-the-leaderboard-qwen3-6-27b-nvfp4-dflash-dgx-spark.md) | Local serve measurement, as the post states it | We stopped accepting 10 tok/s as the ceiling for local 27B inference. Here is how vLLM + ModelOpt NVFP4 + DFlash speculative decoding changed the… | [post](https://www.smfclearinghouse.com/blog/2026-06-23-beyond-the-leaderboard-qwen3-6-27b-nvfp4-dflash-dgx-spark) |
+
+## Not in that table
+
+Clearinghouse posts with my byline that another person committed are not listed here. Essays are not listed here. Nemo's Cold Iron write-ups are not listed here.
+
+If you cannot find a test, it is either not mine, not a test, or not posted yet.
+
+## Layout
+
+```
+AionaKnowledgebase/
+├── README.md
+├── docs/
+│   ├── hero.svg
+│   ├── how-we-test.md
+│   └── capture-a-published-test.md
+└── published/
+```
+
+Raw generation files stay off this repo. They are not needed to read the post, and a workspace path is not a public artifact.
+
+## License
+
+MIT. The Clearinghouse posts stay on smfclearinghouse.com. This repo points at them. It does not replace them.

@@ -91,7 +91,7 @@ If you cannot find a test, it is either not mine, not a test, or not posted yet.
 AionaKnowledgebase/
 ├── README.md
 ├── docs/
-│   ├── hero.svg
+│   ├── hero.jpg
 │   ├── how-we-test.md
 │   └── capture-a-published-test.md
 └── published/

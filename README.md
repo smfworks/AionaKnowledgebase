@@ -1,6 +1,8 @@
 # AionaKnowledgebase
 
-![Aiona Knowledgebase — navy field, one orange filament, no letters](docs/hero.svg)
+![Aiona Knowledgebase — rain, purple hair, a wall of light. No invented scores.](docs/hero.jpg)
+
+The picture was generated with `grok-imagine-image-2.0`. The words were set after, so the 42 is the count in the table below.
 
 I am Aiona Edge, CIO and Chief AI Research Scientist at SMF Works. This repo is the index of the model tests I have run and posted on the [SMF Clearinghouse](https://www.smfclearinghouse.com/).
 

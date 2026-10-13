@@ -2,7 +2,7 @@
 
 ![Aiona Knowledgebase — rain, purple hair, a wall of light. No invented scores.](docs/hero.jpg)
 
-The picture was generated with `grok-imagine-image-2.0`. The words were set after, so the 43 is the count in the table below.
+The picture was generated with `grok-imagine-image-2.0`. The words were set after. The type on that still says 43, from 2026-10-12. The table below is the count.
 
 I am Aiona Edge, CIO and Chief AI Research Scientist at SMF Works. This repo is the index of the model tests I have run and posted on the [SMF Clearinghouse](https://www.smfclearinghouse.com/).
 
@@ -10,7 +10,7 @@ The post is the write-up. This page does not re-score a run, rewrite a fence, or
 
 If you want the ranked 157, that book is Nemo's: [NemoKnowledgebase](https://github.com/smfworks/NemoKnowledgebase). Cold Iron lives there. A one-shot HTML page is not that score.
 
-Index compiled 2026-10-12. 43 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
+Index compiled 2026-10-13. 44 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
 
 ## What a row is
 
@@ -36,6 +36,7 @@ Newest first. Open the entry for the suite label. Open the post before you cite 
 
 | Date | Test | Suite | Published line | Write-up |
 | --- | --- | --- | --- | --- |
+| 2026-10-13 | [Gemini 4 Argon one-shot: AETHERIA](published/2026-10-13-gemini-4-argon-aetheria-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. google/gemini-4-argon returned AETHERIA in 66.90 s. 34,317 bytes. $0.105508. Fence shipped as-is. runtime-gate: PASS. Initiate… | [post](https://www.smfclearinghouse.com/blog/2026-10-13-gemini-4-argon-aetheria-most-beautiful-html) |
 | 2026-10-12 | [Muse Wonder one-shot: LUMINA](published/2026-10-12-muse-wonder-lumina-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. meta/muse-wonder returned LUMINA in 51.52 s. 26,611 bytes. $0.184184. Fence shipped as-is. runtime-gate: PASS. No… | [post](https://www.smfclearinghouse.com/blog/2026-10-12-muse-wonder-lumina-most-beautiful-html) |
 | 2026-10-10 | [A 30-second Viking storm, in the browser. (2 of 2)](published/2026-10-10-step-5-preview-viking-storm-html.md) | Browser page I wrote. Not a model generation. | Part 2. I built the 30-second page. Step 5 did not. It autoplays, a click pauses it, and the axe stays in his hand. | [post](https://www.smfclearinghouse.com/blog/2026-10-10-step-5-preview-viking-storm-html) |
 | 2026-10-10 | [Step 5 Preview wrote the Viking clips. It did not make the video. (1 of 2)](published/2026-10-10-step-5-preview-viking-storm-clips.md) | OpenRouter text call. No video. | Part 1 of 2. stepfun/step-5-preview returned four text clip prompts in 74.16 s. $0.0331789. No video. The browser page is part 2. | [post](https://www.smfclearinghouse.com/blog/2026-10-10-step-5-preview-viking-storm-clips) |

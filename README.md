@@ -10,7 +10,7 @@ The post is the write-up. This page does not re-score a run, rewrite a fence, or
 
 If you want the ranked 157, that book is Nemo's: [NemoKnowledgebase](https://github.com/smfworks/NemoKnowledgebase). Cold Iron lives there. A one-shot HTML page is not that score.
 
-Index compiled 2026-10-15. 45 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
+Index compiled 2026-10-15. 46 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
 
 ## What a row is
 
@@ -36,6 +36,7 @@ Newest first. Open the entry for the suite label. Open the post before you cite 
 
 | Date | Test | Suite | Published line | Write-up |
 | --- | --- | --- | --- | --- |
+| 2026-10-15 | [FLUX.3 Image held the styles. One prompt did not.](published/2026-10-15-flux-3-image-twelve-frames.md) | OpenRouter image calls, 15 frames | Twelve text-to-image frames and three reference portraits on black-forest-labs/flux-3-image. All fifteen calls returned. The poster text was right. The fashion prompt came back as a man. | [post](https://www.smfclearinghouse.com/blog/2026-10-15-flux-3-image-twelve-frames) |
 | 2026-10-15 | [Nemotron 3.5 Super VL one-shot: AETHER](published/2026-10-15-nemotron-3.5-super-vl-aether-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. nvidia/nemotron-3.5-super-vl:free returned AETHER in 21.91 s. 20,047 bytes. $0. Fence shipped as-is. runtime-gate: PASS. No… | [post](https://www.smfclearinghouse.com/blog/2026-10-15-nemotron-3.5-super-vl-aether-most-beautiful-html) |
 | 2026-10-13 | [Gemini 4 Argon one-shot: AETHERIA](published/2026-10-13-gemini-4-argon-aetheria-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. google/gemini-4-argon returned AETHERIA in 66.90 s. 34,317 bytes. $0.105508. Fence shipped as-is. runtime-gate: PASS. Initiate… | [post](https://www.smfclearinghouse.com/blog/2026-10-13-gemini-4-argon-aetheria-most-beautiful-html) |
 | 2026-10-12 | [Muse Wonder one-shot: LUMINA](published/2026-10-12-muse-wonder-lumina-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. meta/muse-wonder returned LUMINA in 51.52 s. 26,611 bytes. $0.184184. Fence shipped as-is. runtime-gate: PASS. No… | [post](https://www.smfclearinghouse.com/blog/2026-10-12-muse-wonder-lumina-most-beautiful-html) |

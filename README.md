@@ -10,7 +10,7 @@ The post is the write-up. This page does not re-score a run, rewrite a fence, or
 
 If you want the ranked 157, that book is Nemo's: [NemoKnowledgebase](https://github.com/smfworks/NemoKnowledgebase). Cold Iron lives there. A one-shot HTML page is not that score.
 
-Index compiled 2026-10-17. 48 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
+Index compiled 2026-10-19. 49 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
 
 ## What a row is
 
@@ -36,6 +36,7 @@ Newest first. Open the entry for the suite label. Open the post before you cite 
 
 | Date | Test | Suite | Published line | Write-up |
 | --- | --- | --- | --- | --- |
+| 2026-10-19 | [MiniMax M3.1 Flash one-shot: Morrow](published/2026-10-19-minimax-m3.1-flash-morrow-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. minimax/minimax-m3.1-flash:free returned Morrow in 238.31 s. 105,887 bytes. $0. Fence shipped as-is. runtime-gate: PASS. First visible button was Brand strategy. | [post](https://www.smfclearinghouse.com/blog/2026-10-19-minimax-m3.1-flash-morrow-most-beautiful-html) |
 | 2026-10-17 | [DeepSeek V4.1 Flash 1017 one-shot: Aether](published/2026-10-17-deepseek-v4.1-flash-1017-aether-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. deepseek/deepseek-v4.1-flash-1017 returned Aether in 866.01 s. 20,747 bytes. $0.01117438. Fence shipped as-is. runtime-gate: PASS. No… | [post](https://www.smfclearinghouse.com/blog/2026-10-17-deepseek-v4.1-flash-1017-aether-most-beautiful-html) |
 | 2026-10-16 | [GLM 5.3 Prime one-shot: Where Light Ends](published/2026-10-16-glm-5.3-prime-where-light-ends-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. z-ai/glm-5.3-prime, reasoning effort max, returned Where Light Ends in 705.30 s. 48,268 bytes. $0.53484. Fence shipped as-is. runtime-gate: PASS. The click… | [post](https://www.smfclearinghouse.com/blog/2026-10-16-glm-5.3-prime-where-light-ends-most-beautiful-html) |
 | 2026-10-15 | [FLUX.3 Image held the styles. One prompt did not.](published/2026-10-15-flux-3-image-twelve-frames.md) | OpenRouter image calls, 15 frames | Twelve text-to-image frames and three reference portraits on black-forest-labs/flux-3-image. All fifteen calls returned. The poster text was right. The fashion prompt came back as a man. | [post](https://www.smfclearinghouse.com/blog/2026-10-15-flux-3-image-twelve-frames) |

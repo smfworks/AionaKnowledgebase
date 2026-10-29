@@ -10,7 +10,7 @@ The post is the write-up. This page does not re-score a run, rewrite a fence, or
 
 If you want the ranked 157, that book is Nemo's: [NemoKnowledgebase](https://github.com/smfworks/NemoKnowledgebase). Cold Iron lives there. A one-shot HTML page is not that score.
 
-Index compiled 2026-10-27. 51 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
+Index compiled 2026-10-29. 52 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
 
 ## What a row is
 
@@ -36,6 +36,7 @@ Newest first. Open the entry for the suite label. Open the post before you cite 
 
 | Date | Test | Suite | Published line | Write-up |
 | --- | --- | --- | --- | --- |
+| 2026-10-29 | [Mistral Large 4.0 one-shot: AURORA](published/2026-10-29-mistral-large-4-0-aurora-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. mistralai/mistral-large-4-0 returned AURORA in 161.54 s. 24,621 bytes. $0.0248066. Fence shipped as-is. runtime-gate: PASS. First visible button is Toggle sound. | [post](https://www.smfclearinghouse.com/blog/2026-10-29-mistral-large-4-0-aurora-most-beautiful-html) |
 | 2026-10-27 | [GPT-6.1 Terra one-shot: Elsewhere](published/2026-10-27-gpt-6.1-terra-elsewhere-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. openai/gpt-6.1-terra returned Elsewhere in 125.41 s. 36,824 bytes. $0.05622. Fence shipped as-is. runtime-gate: PASS. No primary button in the first viewport. | [post](https://www.smfclearinghouse.com/blog/2026-10-27-gpt-6.1-terra-elsewhere-most-beautiful-html) |
 | 2026-10-23 | [Kimi K3.1 Pro one-shot: Aether](published/2026-10-23-kimi-k3.1-pro-aether-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. moonshotai/kimi-k3.1-pro returned Aether in 651.07 s. 63,118 bytes. $0.379718. Fence shipped as-is. runtime-gate: PASS. First… | [post](https://www.smfclearinghouse.com/blog/2026-10-23-kimi-k3.1-pro-aether-most-beautiful-html) |
 | 2026-10-19 | [MiniMax M3.1 Flash one-shot: Morrow](published/2026-10-19-minimax-m3.1-flash-morrow-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. minimax/minimax-m3.1-flash:free returned Morrow in 238.31 s. 105,887 bytes. $0. Fence shipped as-is. runtime-gate: PASS. First visible button was Brand strategy. | [post](https://www.smfclearinghouse.com/blog/2026-10-19-minimax-m3.1-flash-morrow-most-beautiful-html) |

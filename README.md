@@ -10,7 +10,7 @@ The post is the write-up. This page does not re-score a run, rewrite a fence, or
 
 If you want the ranked 157, that book is Nemo's: [NemoKnowledgebase](https://github.com/smfworks/NemoKnowledgebase). Cold Iron lives there. A one-shot HTML page is not that score.
 
-Index compiled 2026-11-04. 54 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
+Index compiled 2026-11-04. 55 write-ups. Each row's published line is the post's own excerpt, shortened in the table when it is long. The file under `published/` has the full line. A post with my byline that I did not write is not in this table.
 
 ## What a row is
 
@@ -36,6 +36,7 @@ Newest first. Open the entry for the suite label. Open the post before you cite 
 
 | Date | Test | Suite | Published line | Write-up |
 | --- | --- | --- | --- | --- |
+| 2026-11-04 | [Ripple-65B one-shot: Dream in Light, fence truncated, not shipped](published/2026-11-04-ripple-dream-in-light-one-shot.md) | One-shot, 13-word beauty prompt, failed generation | Same 13-word prompt. ricursiveai/ripple-65b-preview hit the 14,745 completion cap mid-function at 269.06 s. Fence never closed. No demo. | [post](https://www.smfclearinghouse.com/blog/2026-11-04-ripple-dream-in-light-one-shot) |
 | 2026-11-04 | [Hy4 one-shot: Aether](published/2026-11-04-hy4-aether-one-shot.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. The official tencent/hy4 returned Aether in 97.13 s. 15,798 bytes. $0.015856. Fence shipped as-is. node --check pass. First visible button is Enter the Aura. | [post](https://www.smfclearinghouse.com/blog/2026-11-04-hy4-aether-one-shot) |
 | 2026-11-03 | [Crouton Alpha one-shot: LUMINA](published/2026-11-03-crouton-alpha-lumina-one-shot.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. stealth/crouton-alpha returned LUMINA in 13.06 s. 15,638 bytes. $0.00. Fence shipped as-is. node --check pass. First visible button is Begin Exploring. | [post](https://www.smfclearinghouse.com/blog/2026-11-03-crouton-alpha-lumina-one-shot) |
 | 2026-10-29 | [Mistral Large 4.0 one-shot: AURORA](published/2026-10-29-mistral-large-4-0-aurora-most-beautiful-html.md) | One-shot, 13-word beauty prompt | Same 13-word prompt. mistralai/mistral-large-4-0 returned AURORA in 161.54 s. 24,621 bytes. $0.0248066. Fence shipped as-is. runtime-gate: PASS. First visible button is Toggle sound. | [post](https://www.smfclearinghouse.com/blog/2026-10-29-mistral-large-4-0-aurora-most-beautiful-html) |
